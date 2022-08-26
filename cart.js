@@ -35,8 +35,8 @@ const cart = [
 
 //CODE HERE
 
- const summedPrice = cart.reduce((acc, c) => acc + c.price)
-console.log(summedPrice)
+ const summedPrice = cart.reduce((total, current) => total + current.price, 0)
+// console.log(summedPrice)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -55,7 +55,14 @@ console.log(summedPrice)
 
 //CODE HERE
 
+const calcFinalPrice = (cartTotal, couponValue, tax) => {
+    const totalBeforeCoupon = cartTotal *(1 + tax)
+    const finalPrice = totalBeforeCoupon - couponValue
 
+    return finalPrice
+}
+
+console.log(calcFinalPrice(summedPrice, 5, .06))
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -88,3 +95,11 @@ console.log(summedPrice)
 */
 
 //CODE HERE
+
+const firstCustomer = {
+    firstName : "Raro",
+    lastName : "Macias",
+    address: "9712 Cartway",
+    city: "El Paso",
+    phoneNumber: 9155768400
+}
