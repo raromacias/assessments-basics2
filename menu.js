@@ -71,7 +71,8 @@ console.log(pizza.tags[1])
 */
 
 //CODE HERE
-
+let {price} = pizza
+console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -82,7 +83,8 @@ console.log(pizza.tags[1])
 
 //CODE HERE
 
-
+let {category} = pizza
+console.log(category)
 //////////////////PROBLEM 3////////////////////
 /* 
     Create an array with about 5 objects in it.
@@ -96,7 +98,53 @@ console.log(pizza.tags[1])
 */
 
 //CODE HERE
+const foodArr = [
+    {
+        name : "Cheeseburger",
+        price: 8,
+        category: "entree",
+        popularity: 2,
+        rating: 93,
+        tags: ["Casual", "Hand-held", "kids", "BBQ"]
+    },
+    {
+        name : "Spaghetti",
+        price: 18,
+        category: "entree",
+        popularity: 6,
+        rating: 88,
+        tags: ["Pasta", "Rich", "Italian"]
+    
+    },
+    { 
+    name : "Ice Cream",
+    price: 6,
+    category: "dessert",
+    popularity: 4,
+    rating: 96,
+    tags: ["Sweet", "Cold", "kids", "Flavors"]
+},
+    {
+        name : "Wings",
+        price: 12,
+        category: "appetizer",
+        popularity: 9,
+        rating: 95,
+        tags: ["Casual", "Group", "Spicy", "Boneless"]
+    
+    },
+    {
+        name : "French Toast",
+        price: 10,
+        category: "breakfast",
+        popularity: 15,
+        rating: 85,
+        tags: ["Syrup", "Decadent", "Sweet", "Sugar"]
+    
+    }
 
+    
+]
 
 
 //////////////////PROBLEM 4////////////////////
@@ -112,8 +160,24 @@ console.log(pizza.tags[1])
 */
 
 //CODE HERE
+const getFoodByTag = (arr, tags, cb) => {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].tags === tags[i]) {
+            return cb(arr[i].name)
+        }
+    }
+}
+console.log( getFoodByTag(foodArr, "Syrup"))
+//  const filteredFood = foodArr.filter( element => {
+//     let {name} = foodArr
+//     let newArr = foodArr.tags[]
+//     // for(i=0; i < foodArr.t)
+//     if (element.tags[i] = element){
+//         return name;
+//     }
+//  })
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+//  console.log(filteredFood("Syrup"))
 
 
 
@@ -157,7 +221,12 @@ console.log(pizza.tags[1])
 */
 
 //CODE HERE
-
+const filterByProperty = (property, number, type) => {
+    let filteredArray = []
+    if (property === foodArr.property){
+        return 
+    }
+}
 
 /*
     Invoke the `filterByProperty` function passing
