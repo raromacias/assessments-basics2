@@ -160,24 +160,15 @@ const foodArr = [
 */
 
 //CODE HERE
-const getFoodByTag = (arr, tags, cb) => {
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i].tags === tags[i]) {
-            return cb(arr[i].name)
-        }
-    }
-}
-console.log( getFoodByTag(foodArr, "Syrup"))
-//  const filteredFood = foodArr.filter( element => {
-//     let {name} = foodArr
-//     let newArr = foodArr.tags[]
-//     // for(i=0; i < foodArr.t)
-//     if (element.tags[i] = element){
-//         return name;
-//     }
-//  })
 
-//  console.log(filteredFood("Syrup"))
+
+ const filteredFood = foodArr.filter( food => {
+    if(food.tags.includes("Sweet")){
+        return food
+    }
+ })
+
+//  console.log(filteredFood)
 
 
 
@@ -222,10 +213,17 @@ console.log( getFoodByTag(foodArr, "Syrup"))
 
 //CODE HERE
 const filterByProperty = (property, number, type) => {
-    let filteredArray = []
-    if (property === foodArr.property){
-        return 
+    const filteredFood = foodArr.filter((food) => {
+    if (type === "above"){
+        return food[property] >= number
+    }else{
+        return food[property] <= number
     }
+})
+
+return filteredFood
+
+  
 }
 
 /*
@@ -236,3 +234,5 @@ const filterByProperty = (property, number, type) => {
 */
 
 //CODE HERE
+
+console.log(filterByProperty("popularity", 5, "below"))
