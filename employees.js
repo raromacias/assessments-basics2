@@ -67,9 +67,11 @@ empOne.getSchedule()
 
 //CODE HERE
 
-const empTwo = [empOne]
+let empTwo = [...empOne]
+empTwo.name = "Nick"
 console.log(empTwo)
-let [emp]
+
+
 
 //////////////////PROBLEM 2////////////////////
 /*  

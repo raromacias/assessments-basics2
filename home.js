@@ -51,13 +51,13 @@ const greetUser = username => `Welcome back, ${username}`
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
-const canWeDeliver =(zipCode) => {
-    if (deliveryAreaZipCodes.includes(zipCode)){
-        return "You're in our delivery zone!";
-     } else{
-        return `Sorry, we can't deliver to that address`;
-     }
-    }
+// const canWeDeliver =(zipCode) => {
+//     if (deliveryAreaZipCodes.includes(zipCode)){
+//         return "You're in our delivery zone!";
+//      } else{
+//         return `Sorry, we can't deliver to that address`;
+//      }
+//     }
 // console.log(canWeDeliver(84606))
 // console.log(canWeDeliver(85205))
 // /* 
@@ -82,21 +82,21 @@ const canWeDeliver =(zipCode) => {
 //     for(i=0; i < deliveryAreaZipCodes.length ; i ++){
 //         if (deliveryAreaZipCodes[i] === zipCode){
 //             return `You're in our delivery zone!`;
-//         } else {
-//             return `Sorry, we can't deliver to that address`;
 //         }
+//         }
+//         return `Sorry, we can't deliver to that address`;
 //     }
-// }
 
-const canWeDeliverThree = deliveryAreaZipCodes.forEach((zipCode) => {
-    if (zipCode === zipCode){
-        return `You're in our delivery zone!`;
-    } else {
-        return `Sorry, we can't deliver to that address`;
-    }
-})
-console.log(canWeDeliver(84606))
-console.log(canWeDeliver(85205))
+
+// const canWeDeliverThree = deliveryAreaZipCodes.forEach((zipCode) => {
+//     if (zipCode === zipCode){
+//         return `You're in our delivery zone!`;
+//     } else {
+//         return `Sorry, we can't deliver to that address`;
+//     }
+// })
+// console.log(canWeDeliverTwo(84606))
+// console.log(canWeDeliverTwo(85205))
 //////////////////PROBLEM 3////////////////////
 /* 
     Below is an array of objects that have some
@@ -132,9 +132,11 @@ const deals = [
 
 //CODE HERE
 
-const changeDiscount = (deal, title) => {
-    title.replace("5", "0")
-}
+// console.log(deals[0].title)
+
+// deals[0].title = deals[0].title.replace("15%", "10%")
+
+// console.log(deals[0].title)
 
 /*
     The restaurant is going to continue its
@@ -150,3 +152,7 @@ const changeDiscount = (deal, title) => {
 */
 
 //CODE HERE
+
+// console.log(deals[1].desc)
+// deals[1].desc = deals[1].desc.trim().replace('March', "April")
+// console.log(deals[1].desc)
