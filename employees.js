@@ -20,7 +20,15 @@
 */
 
 //CODE HERE
-
+class Employee {
+    constructor(name, shifts){
+        this.name = name;
+        this.shifts = shifts;
+    }
+    getSchedule(){
+        console.log(`${this.name} works on ${this.shifts}`);
+    }
+}
 
 
 /*
@@ -34,13 +42,15 @@
 */
 
 //CODE HERE
-
+let empOne = new Employee("Jess", "weekday morning, weekday afternoons");
+console.log(empOne)
 /*
     Call the `getSchedule` method on the
     `empOne` object.
 */
 
 //CODE HERE
+empOne.getSchedule()
 
 
 /*
@@ -57,7 +67,9 @@
 
 //CODE HERE
 
-
+const empTwo = [empOne]
+console.log(empTwo)
+let [emp]
 
 //////////////////PROBLEM 2////////////////////
 /*  
