@@ -69,3 +69,4 @@ class Ticket {
 let firstTicket  = new Ticket("pizza, bread, and soda", "7:03", 575)
 console.log(firstTicket)
 firstTicket.updateStatus("cooking")
+console.log(firstTicket)
