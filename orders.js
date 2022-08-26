@@ -37,31 +37,35 @@ class Ticket {
         this.customerId = customerId;
         this.status = "queued";
     }
-}
+
     updateStatus(newStatus){
-        this.status = newStatus;
+        this.status = newStatus
         console.log(`The order for customer ${this.customerId} is
-        now ${this.status}.')}
+        now ${this.status}.`)
+}
+}   
+
+
+// /*
+//     Create a new instance of your class.
+//     Save it to a variable called `firstTicket`.
+
+//     You can use this sample data or make
+//     up your own:
+//     food ordered: pizza, bread, and soda
+//     ordered at: 7:03
+//     customer: 575
+// */
 
 
 
-/*
-    Create a new instance of your class.
-    Save it to a variable called `firstTicket`.
+// /*
+//     Call the `updateStatus` method on
+//     `firstTicket` passing in the string
+//     'cooking'
+// */
 
-    You can use this sample data or make
-    up your own:
-    food ordered: pizza, bread, and soda
-    ordered at: 7:03 PM
-    customer: 575
-*/
-
-
-
-/*
-    Call the `updateStatus` method on
-    `firstTicket` passing in the string
-    'cooking'
-*/
-
-//CODE HERE
+// //CODE HERE
+let firstTicket  = new Ticket("pizza, bread, and soda", "7:03", 575)
+console.log(firstTicket)
+firstTicket.updateStatus("cooking")
