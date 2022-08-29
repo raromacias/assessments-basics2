@@ -86,7 +86,14 @@ console.log(calcFinalPrice(summedPrice, 5, .06))
 
 /*
     TEXT ANSWER HERE
-
+     I chose first and last name to be able to identify each specific customer.
+     And the datatype is strings.
+     I also choose address for possible delivery service as well as possible coupon mailings.
+     this property will also be a string.
+     I choose to properly mail special offers.
+     This property will also be a string.
+     And lastly I chose phone number to help with identifying customers
+    This datatype is a number.
 */
 
 /*
